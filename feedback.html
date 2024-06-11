@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pixelart</title>
+    <link rel="stylesheet" href="feedback.css" />
+  </head>
+  <body>
+    <div id="feedback-container">
+      <h1>Give us your valuable feedback</h1>
+      <p>Your feedback is very important to us</p>
+      <div class="emoji-box">
+        <button class="btn-normal">&#128578;</button>
+        <button class="btn-normal">&#128515;</button>
+        <button class="btn-normal">&#128519;</button>
+        <button class="btn-normal">&#128531;</button>
+        <button class="btn-normal">&#128532;</button>
+        <button class="btn-normal">&#128545;</button>
+      </div>
+      <p class="feedback-question">
+        Share the experience on designing your Custom T-Shirt
+      </p>
+      <textarea id="feedback-textarea" cols="20" rows="5"></textarea>
+      <span class="error-message" id="textarea-error" style="color: red"></span>
+      <p class="feedback-question">
+        For further updates on our Products,share your Email :
+      </p>
+      <div class="info-field">
+        <div class="feedback-email">
+          <label>
+            <input type="email" id="feedback-email" placeholder="" />
+          </label>
+          <span
+            class="error-message"
+            id="email-error"
+            style="color: red"
+          ></span>
+        </div>
+      </div>
+      <div class="feedback-center">
+        <button class="btn button" onclick="submitFeedback()">Send</button>
+      </div>
+    </div>
+    <script src="feedback.js"></script>
+  </body>
+</html>
